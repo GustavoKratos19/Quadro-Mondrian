@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+    display: grid;
+    grid-template-areas: 'header header header header header'
+                         'section section section section section'
+                         'aside aside div div footer';
+    grid-template-rows: 31vh 30.5vh 36.5vh;
+    grid-template-columns: 19.5vw 19.5vw 19.5vw 19.5vw 19.5vw;
+    grid-gap: 8px;
+    margin: 0;
+}
+
+header {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: header;
+    background-color: white;
+}
+header div {  
+    width: 90%;
+    height: 98%;  
+    background-color: blueviolet;
+}
+
+section {
+    grid-area: section;
+    background-color: red;
+}
+
+aside {
+    grid-area: aside;
+    background-color: yellow;
+}
+div {
+    grid-area: div;
+    background-color: magenta;
+}
+
+footer {
+    grid-area: footer;
+    background-color: lawngreen;
+}
